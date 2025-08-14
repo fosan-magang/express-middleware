@@ -8,5 +8,5 @@ router.post('/', authenticateToken, addTodo);
 router.get('/', authenticateToken, getTodos);
 router.put('/:id',authenticateToken,updateTodo);
 router.delete('/:id',authenticateToken,deleteTodo);
-router.get('/edittodo/:id', authenticateToken, getTodoById);
+router.get('/:id', authenticateToken, getTodoById);
 export default router;

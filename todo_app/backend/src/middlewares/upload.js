@@ -3,7 +3,7 @@ import path from 'path';
 import fs from 'fs';
 
 // pastikan folder public/foto ada
-const uploadDir = './public/foto';
+const uploadDir = './frontend/public/foto';
 if (!fs.existsSync(uploadDir)) {
   fs.mkdirSync(uploadDir, { recursive: true });
 }
